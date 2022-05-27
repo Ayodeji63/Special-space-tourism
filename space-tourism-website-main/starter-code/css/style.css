@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@400;500;600;700&display=swap');
+
+:root {
+    --LighterCyan: hsl(213, 5%, 54%);
+    --LightCyan: hsl(225, 6%, 87%);
+    --Darkblue: hsl(223, 90%, 4%);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style-type: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Mohave', sans-serif;
+    position: relative; 
+}
+section {
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+/*Utility Class*/
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li a {
+    color: var(--tw-ring-offset-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+ul li a:hover, .active {
+    border-bottom: 4px solid #fff;
+}
+
+.first-div {
+    flex: 0 0 40%;
+    max-width: 40%;
+    color: var(--tw-ring-offset-color);
+    text-align: justify;
+    overflow: hidden;
+    }
+
+    .second-div {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+.row {
+    padding: 0px 100px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header {
+    padding:50px 100px 0 100px;
+}
+h1 {
+    color: var(--tw-ring-offset-color);
+    text-transform: uppercase;
+    font-size: 7rem;
+    letter-spacing: 10px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--tw-ring-offset-color);
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--LightCyan);
+}
+
+h3 span {
+    opacity: 0.4;
+}
+h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    opacity: 0.4;
+}
+p {
+    line-height: 30px;
+    color: var(--LighterCyan);
+    font-weight: 500;
+}
+
+
+.hidden {
+    display: none !important;
+
+}
+
+/*Header Styling*/
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0 20px;
+}
+nav {
+    flex: 0 0 60%;
+    max-width: 60%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+nav .navbar {
+ margin-left: 50px;
+    
+}
+nav .navbar ul li {
+    margin: 20px 45px 20px 0;
+}
+nav .navbar ul li a {
+    padding-bottom: 15px;
+   
+}
+
+
+
+
+
+/*home styling */
+
+.home::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+background: url(/starter-code/assets/home/background-home-desktop.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+z-index: -10;
+}
+.home .second-div-inner {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tw-ring-offset-color);
+    border-radius: 50%;
+
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.home .second-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.second-div-inner span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--tw-ring-color);
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+/* Destination styling*/
+
+.destination::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+z-index: -10;
+}
+
+.destination .main {
+    margin-top: 50px;
+}
+
+.destination .first-div .img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+
+}
+
+.destination .first-div .img img,
+.crew .second-div .img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.destination .second-div .links {
+    margin-bottom: 30px;
+}
+
+.destination .second-div .links ul li a {
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+.destination .second-div .text {
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--LighterCyan);
+}
+
+
+.destination .second-div .information {
+    margin-top: 20px;
+    display: flex;
+}
+
+.destination .second-div .information p {
+    font-size: 18px;
+}
+
+.destination .second-div .information .distance {
+    margin-right: 80px;
+}
+
+/* crew styling */
+.crew::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/starter-code/assets/crew/background-crew-desktop.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+z-index: -10;
+}
+
+
+.crew .main {
+    margin-top: 0px;
+}
+
+.crew .first-div .text h4 {
+    margin-bottom: 10px;
+}
+
+.crew .first-div .text h2 {
+    margin-bottom: 20px;
+}
+.crew .second-div {
+    height: 450px;
+}
+
+.crew .second-div .img {
+    flex:  0 0 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.crew .second-div .img img {
+    object-fit: contain;
+    width: 100%;
+}
+.crew .first-div  .tabs {
+    display: flex;
+    margin-top: 80px;
+}
+
+.crew .first-div  .tabs span {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: var(--LighterCyan);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.crew .first-div  .tabs span:hover, .crew .first-div  .tabs .active {
+    background-color: #fff;
+}
+
+/* Technology styling */
+.technology .row {
+    padding-right: 0;
+}
+.technology::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+z-index: -10;
+}
+
+.technology .main {
+    margin-top: 0;
+}
+.technology .first-div {
+display: flex;
+margin-top: 90px;
+
+}
+
+.technology .first-div .tabs {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.technology .first-div .tabs span {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    border: 1px solid var(--LighterCyan);
+    cursor: pointer;
+}
+
+.technology .first-div .tabs span:hover, .technology .first-div .tabs .active  {
+    background-color: #fff;
+    color: #000;
+}
+
+.technology .first-div .text {
+    flex:  0 0 80%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: left;
+}
+
+.technology .first-div .text h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.technology .second-div {
+    height: 450px;
+}
+.technology .second-div .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.technology .second-div .img img {
+    object-fit: contain;
+    height: 100%;
+}
+.hamburger, .close {
+    display: none;
+}
+.show {
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        margin-top: 50px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .destination .first-div .img {
+    margin-top: 40px;
+}
+.destination .second-div .links {
+    margin-bottom: 20px;
+}
+.destination h1 {
+    font-size: 6rem;
+}
+
+.crew .first-div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: justify;
+}
+.crew .second-div {
+height: 400px; 
+}
+
+.technology .first-div {
+    margin-top: 50px;
+    flex: 0 0 50%;
+
+max-width: 50%;
+}
+.technology .second-div {
+    height: 400px;
+}
+}
+
+@media screen and (max-width:997px)  {
+    .row {
+        padding: 0px 50px 0  50px;
+    }
+    .technology .row {
+        padding-right: 50px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    nav .navbar {
+        margin-left: 0px;
+    }
+    nav .navbar ul li {
+        margin: 20px 0px 40px 0;
+    }
+    .hamburger {
+        display: initial;
+    }
+    header .logo {
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home::before {
+        min-height: 100vh;
+        background: url(/starter-code/assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .close {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 20px 40px;
+        }
+    nav {
+        width: 500px;
+        height: 100%;
+        position: absolute;
+        display: none;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--Darkblue);
+        z-index: 10;
+        transition: all .5s ease;
+    }
+    .navbar {
+        width: 100%;
+        margin: 0;
+    }
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+   .main {
+        margin-top: 100px;
+    }
+    .row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-div {
+        flex: 0 0 70%;
+        max-width: 70%;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+    .second-div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 50px
+    }
+
+    .home .second-div-inner {
+        height: 150px;
+        width: 150px;
+    }
+  
+    .destination .first-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    .destination::before {
+        min-height: 100vh;
+        background: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    
+    .destination .first-div .img {
+        width: 0 0 50%;
+        max-width: 50%;
+        margin-top: 10px;
+    }
+    .destination .first-div .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .destination .second-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destination .second-div .information {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .destination .second-div .information .distance {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .crew,.technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+   .crew .row, .technology .row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+
+    .crew::before {
+        min-height: 100vh;
+        background: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .crew .first-div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew .first-div  .tabs {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .crew .first-div  .tabs span {
+        margin-right: 30px;
+    }
+    .crew .second-div .img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .technology .first-div {
+        margin-top: 50px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .technology .first-div .tabs {
+         display: flex; 
+        align-self: center; 
+         flex-direction: row; 
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+    .technology .first-div .text {
+        text-align:center;
+    }
+    .technology .first-div .tabs span {
+        margin-right: 30px;
+    }
+    .technology .second-div {
+        flex:  0 0 100%;
+        max-width: 100%;
+    }
+    .technology .second-div .img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .row {
+        padding: 0px 20px 0  20px;
+    }
+    .technology .row {
+        padding-right: 20px;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .destination .first-div .img {
+       flex: 0 0 80%;
+       max-width: 80%;
+    }
+    .destination .first-div {
+        margin-bottom: 20px;
+    }
+
+    .destination .first-div .img img {
+        object-fit: cover;
+    }
+} 
